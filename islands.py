@@ -1,9 +1,11 @@
+# count the number of  islands
+
 from sys import stdin, stdout
 
 f = open('input.txt', 'r')
 stdin = f
 input = stdin.readline
-
+# dfs method
 ##########################################################
 
 # check if the location is valid

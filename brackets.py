@@ -1,3 +1,5 @@
+# check if brackets are nested properly
+
 brackets = input()
 
 stack = []
