@@ -23,10 +23,7 @@ for i in range(n):
     cost1 += changed_cost[i][1][0]
     cost1 += changed_cost[n + i][1][1]
 
-
 print(cost1)
-
-
 ##########################################################
 
 f.close()
