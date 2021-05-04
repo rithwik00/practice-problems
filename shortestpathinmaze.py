@@ -28,7 +28,7 @@ source = (0, 0)
 destination = (3, 0)
 maze = []
 
-for i in range(m):
+for i in range(ROWS):
     maze.append(list(map(int, input().split())))
 
 print(BFS(maze, source, destination))
