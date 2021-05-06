@@ -2,8 +2,12 @@
 # return array of any combination of elements that add up to the targetsum
 
 def howSum(targetSum, numbers):
+    if targetSum in visited:
+        return visited[targetSum]
+
     if targetSum == 0:
         return []
+
     if targetSum < 0:
         return None
 
@@ -12,8 +16,11 @@ def howSum(targetSum, numbers):
         result = howSum(remainder, numbers)
 
         if result != None:
-            return result + [num]
+            visited[targetSum] = result + [num]
+            return visited[targetSum]
 
+    visited[targetSum] = None
     return None
 
-print(howSum(7, [2,4])) 
+visited = {}
+print(howSum(300, [2,4])) 
