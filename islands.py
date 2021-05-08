@@ -1,4 +1,4 @@
-# count the number of  islands
+# count the number of  distinct islands
 
 from sys import stdin, stdout
 
@@ -26,12 +26,14 @@ def count_adj_ones(row, col):
     
     # check for adjacent locations
     for k in range(0, 8):
-        if isSafe(row + rowN[k], col + colN[k]):
-            count_adj_ones(row + rowN[k], col + colN[k])
+        xx = row + rowN[k]
+        yy = col + colN[k]
+        if isSafe(xx, yy):
+            count_adj_ones(xx, yy)
 
 # 1s denote the island
 # 0s denote water 
-island_matrix =[[1, 0, 0, 0],
+island_matrix =[[1, 0, 0, 1],
                 [1, 1, 0, 0],
                 [0, 0, 0, 0],
                 [1, 0, 1, 1]]
