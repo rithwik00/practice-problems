@@ -31,7 +31,7 @@ for element in infix:
                     break
 
         else:
-            # check if bracket opens
+            # check if bracket opens    
             # print(priority[element], element)
             if element == '(':
                 operator.append(element)

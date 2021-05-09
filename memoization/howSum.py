@@ -1,5 +1,5 @@
 # takes targetSum and array of numbers as input
-# return array of any combination of elements that add up to the targetsum
+# return array of any combination of elements(repeated allowed) that add up to the targetsum
 
 def howSum(targetSum, numbers):
     if targetSum in visited:

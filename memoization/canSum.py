@@ -1,4 +1,4 @@
-# return true if given sum is possibleusing elements in array else false
+# return true if given sum is possible using elements(repeated allowed) in array else false
 
 def canSum(targetSum, numbers):
     if targetSum in visited:
